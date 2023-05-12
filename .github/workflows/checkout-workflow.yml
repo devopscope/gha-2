@@ -1,0 +1,13 @@
+name: Checkout Deneme
+
+on:
+  push:
+    branches:
+      - checkout-deneme
+
+jobs:
+  dosya-listeleme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: List files
+        run: ls -R
